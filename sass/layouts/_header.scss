@@ -1,0 +1,56 @@
+#main-header {
+  background:$primary;
+}
+.nav {
+  display: grid;
+   grid-template-columns: 1fr;
+   
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-li {
+  display: grid;
+  grid-template-columns: 3fr;
+  justify-content: space-between;  
+  align-content: center;
+  margin: 5px 15px;
+  border-radius: 12px;
+  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.nav-li a {  
+  width: 100%;
+
+}
+.nav-link-body {
+  width: 100%;
+  position: relative;
+  p {
+    margin-bottom: 0!important;
+  }
+  
+}
+.nav-link-body .fa-icon {
+position: absolute;
+right: 3px;
+}
+#profil-pic {
+  width: 9rem;
+  height: 9rem;
+  margin: auto;
+}
+.profile-pic, #profil-pic {
+  margin-bottom: 0.8em;
+  border-radius: 50% 50%;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% 50%;
+  -ms-border-radius: 50% 50%;
+  -o-border-radius: 50% 50%;
+}
+.devel {
+  border-bottom: 2px solid $accent;
+}

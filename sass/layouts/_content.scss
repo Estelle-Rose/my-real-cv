@@ -1,0 +1,44 @@
+#main-container {      
+  padding: 3em 2em 5em 2em;
+  .home-content {
+    margin-bottom: 40px;
+  }
+  @include respond-to(medium) {
+     padding: 5em 1em 7em 1em;
+      
+  }
+  @include respond-to(large) {
+     padding: 5em 1em;
+      .home-content {
+          margin-bottom: 0!important;
+      }
+  }
+}
+
+
+/*polygons verts */
+.second-container {
+  width: 100%;
+  height: 150px;
+  background-color: $accent;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: absolute;
+  right: 0;
+  bottom: 0;  
+  left: 0;   
+  
+  z-index: -20;
+}
+.third-container {
+  width: 100%;
+ height: 150px;
+  background-color: $accent;
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+  position: absolute;
+  right: 0;
+  left:0;
+  top: 0;
+  
+  
+  z-index: -21;
+}

@@ -1,0 +1,49 @@
+    // Breakpoints
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "small" {
+      @media (min-width: 599px) {
+        @content;
+      }
+    }
+  
+    @else if $breakpoint == "medium" {
+      @media (min-width: 767px) {
+        @content;
+      }
+    }
+  
+    @else if $breakpoint == "large" {
+      @media (min-width: 840px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "xl" {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+  // Background color
+@mixin bg-color($parent, $background) {
+    #{$parent} {
+        background-color: $background;
+    }
+}
+// Background Classes
+@each $background, $value in $backgrounds {
+    @include bg-color(".bg-color-#{$background}", $value);
+}
+  // Gradient text
+@mixin text-gradient($parent, $gradient) {
+    #{$parent} {
+      background-image: $gradient;      
+      -webkit-background-clip: text;      
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  // Gradient Classes 
+@each $gradient, $value in $gradients {
+    @include text-gradient(".text-gradient-#{$gradient}", $value);
+  }
+
+  

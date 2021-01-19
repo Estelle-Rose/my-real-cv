@@ -1,0 +1,67 @@
+.square-li, .round-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 2.3em;
+  height: 2.3em;
+  
+}
+.round-li {
+  padding-top: 3px;  
+  
+}
+.sequelize {
+  width: 36px;
+ padding-bottom: 3px;
+}
+.mongodb {
+    width: 30px;
+}
+.visual {
+    width: 2.1em;
+    height: 1.4em;
+}
+.home-body {
+.__heading span{
+border-bottom: 3px dashed $accent;
+}
+}
+.terminal {    
+        font-size: 16px!important;
+    
+}
+.competences {
+     ul {
+      margin-bottom: 0;
+    }  
+    h3 {
+        font-size: 1.2em;
+    }
+    
+}
+.logo_oc {
+    width: 20px;
+    height: 20px;
+}
+.bloc-formation-loisirs {
+    padding: 0!important;
+}
+.bloc-loisirs {
+    li {
+        list-style-type: none;
+    }
+    
+    
+    .mongodb {
+        width: 26px;
+    }
+}
+.soft-skills {
+    li {
+    line-height: 0.8em;
+    }
+    li.__left{
+    border-right: 3px solid $accent;    
+    }
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "my-real-cv",
+  "version": "1.0.0",
+  "description": "mon cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/main.scss:css/main.css",
+    "prefix": "postcss css/main.css --use autoprefixer -d css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Estelle-Rose/my-real-cv.git"
+  },
+  "author": "estelle rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Estelle-Rose/my-real-cv/issues"
+  },
+  "homepage": "https://github.com/Estelle-Rose/my-real-cv#readme"
+}

@@ -1,0 +1,15 @@
+.backhome .btn {
+    background-color: $primary;
+    width: 3em;
+    height: 3em;
+    a i{
+        margin-top: 0.1em;
+    }
+}
+.backhome {
+    margin-top: -4em;
+    @include respond-to(large) {
+        margin-top: 1em;
+        padding: 0 4em;
+    }
+}

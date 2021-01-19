@@ -1,0 +1,92 @@
+
+body {      
+    background: $primary;
+    font-family: 'Poppins', sans-serif!important;   
+    font-weight: 400;
+    font-size: 16px;
+    color:$secondary; 
+    position: relative;
+}
+p, a {
+    color: $secondary;
+    
+}
+p {
+  font-weight: 200;
+}
+a:hover {
+  text-decoration: none !important;
+}
+h2 {
+  font-size: 2.3em;
+}
+.shadow {
+  box-shadow:  3px 3px 3px #202125, -3px -3px 3px #353535;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.radius-2 {
+  border-radius: 50%;
+    -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.radius {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.inset-shadow {
+  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+
+}
+
+
+
+/* icons */
+.fa-icon {
+    color: #066666;
+    font-size: 25px;
+  
+}
+.fa-arrow-up {
+  color: $accent;
+}
+
+.pigeon {
+  width: 48px;
+  margin-right: -0.8em;
+}
+
+/* anim developpeusee*/
+.css-typing h3 {
+  border-right: .15em solid #006666;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  width: 9.7em;
+  animation: type 4s steps(40, end);
+  -webkit-animation: type 4s steps(40, end);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  @include respond-to(medium){
+         width: 22.5em;
+    }
+}
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #006666;
+  }
+  100% {
+    border: none;
+  }
+}
