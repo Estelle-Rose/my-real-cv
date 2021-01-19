@@ -564,6 +564,7 @@ h2 {
 
 #main-header {
   background: #2c2d30;
+  max-height: 650px;
 }
 
 .nav {
@@ -733,7 +734,7 @@ h2 {
   list-style-type: none;
 }
 .bloc-loisirs .mongodb {
-  width: 26px;
+  width: 25px;
 }
 
 .soft-skills li {
@@ -741,6 +742,16 @@ h2 {
 }
 .soft-skills li.__left {
   border-right: 3px solid #066666;
+}
+
+.bloc-portfolio.card {
+  padding: 1em;
+  margin: 1em;
+  background-color: #2c2d30 !important;
+}
+
+.contact-card {
+  background-color: #2c2d30;
 }
 
 /*# sourceMappingURL=main.css.map */

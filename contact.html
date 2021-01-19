@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Contactez-moi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/862e0a79f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+ <body>
+    <div class="third-container"></div>
+    <div class="second-container"></div>
+
+    <div class="container mx-auto" id="main-container">
+      <div class="row  home-content">
+          <header id="main-header" class="col-lg-3 my-md-2 shadow ">
+          <div class="row">
+            <div class="col p-3">
+              <div class="profile-pic d-flex">
+                <img
+                  src="assets/images/profil.jpg"
+                  alt="photo de profil"
+                  id="profil-pic"
+                />
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center mt-2"
+              >
+                <h1 class="mx-auto">Estelle Rose</h1>
+                <p class="mb-3"><span class="devel">Dével</span>oppeuse web</p>
+              </div>
+              <nav class="nav ">
+                <ul >
+                  <li class="mb-3 nav-li">
+                    <a href="index.html" class="d-block mx-auto">
+                      <div
+                        class="nav-link d-flex justify-space-between align-items-center"
+                      >
+                        <div class="nav-link-body text-left">
+                          <p>Accueil</p>
+                        </div>
+
+                        <i class="fas fa-home fa-icon"></i></div
+                    ></a>
+                  </li>
+                  <li class="mb-3 nav-li">
+                    <a href="cv.html" class="d-block mx-auto">
+                      <div
+                        class="nav-link d-flex justify-space-between align-items-center"
+                      >
+                        <div class="nav-link-body text-left">
+                          <p>Mon cv</p>
+                        </div>
+
+                        <i class="fas fa-user fa-icon"></i></div
+                    ></a>
+                  </li>
+                  <li class="mb-3 nav-li">
+                    <a href="portfolio.html" class="d-block mx-auto">
+                      <div
+                        class="nav-link d-flex justify-space-between align-items-center"
+                      >
+                        <div class="nav-link-body text-left">
+                          <p>Portfolio</p>
+                        </div>
+
+                        <i class="fas fa-camera-retro fa-icon"></i></div
+                    ></a>
+                  </li>
+                  <li class="mb-3 nav-li">
+                    <a href="contact.html" class="d-block m-n1">
+                      <div
+                        class="nav-link d-flex justify-space-between align-items-center"
+                      >
+                        <div class="nav-link-body text-left">
+                          <p>Contact</p>
+                        </div>
+                        <img
+                          src="assets/images/pigeon_vert.svg"
+                          class="pigeon"
+                        /></div
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <section class="col-lg-8 my-5 py-lg-4 my-md-2 ml-lg-3 bloc-home bloc-contact shadow">
+         
+          <div class="col-12 main-title d-flex flex-column justify-content-center align-content-center text-center mx-auto py-5">
+            <h2>Contactez-moi !</h2>
+
+          </div>
+           <div class="col-md-8 mx-auto py-2">
+            <div class="card contact-card radius shadow py-2">
+              
+               <div class="row">
+                 <div class="col-12">
+                  <ul class="p-2 d-flex flex-column my-auto">
+                  <li class=" d-flex align-content-center  justify-content-between mb-2">
+                    <span class="round-li inset-shadow radius-2">
+                      <i class="fas fa-map-marker-alt  fa-icon "></i>                    
+
+                    </span>
+                     <p class="my-auto"> Perpignan (66)</p>
+                  </li>
+                  <li class=" d-flex  align-content-center justify-content-between mb-2">
+                    <span class="round-li inset-shadow radius-2">
+                      <a href="mailto:contact.aranea@gmail.com"><i class="fas fa-envelope  fa-icon"></i> </a>                     
+
+                    </span>
+                                     
+                    <p class="my-auto"> contact.aranea@gmail.com</p>
+                  </li>
+                  <li class=" d-flex align-content-center justify-content-between">
+                    <span class="round-li inset-shadow radius-2">
+                      <i class="fas fa-phone-alt  fa-icon"></i>
+                    </span>
+                    <p class="my-auto"> 07 66 35 97 70</p>
+                  </li>
+                </ul>
+                 </div>
+               </div>
+            </div>
+
+          </div>
+          <div class="col-md-8 mx-auto py-5">
+            <div class="card contact-card radius shadow py-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-center pigeon-box ml-n4 pb-3">
+                  <img src="assets/images/pigeon_vert.svg" class="pigeon_contact" alt="..." width="96px">
+                  <h3 class="card-title  font-weight-bold display-5 mt-4">Pigeon voyageur</h3>
+                </div>
+
+                <form action="sendemail.php" method="POST" id="contact-form">
+                  <div class="form-group">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Votre email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="objet">Objet</label>
+                    <input type="text" class="form-control" id="objet" name="objet">
+
+
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark d-flex justify-content-center align-items-center mx-auto">Envoyer</button>
+                </form>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+                <script>
+                  const constraints = {
+                    nom: {
+                      presence: {
+                        allowEmpty: false
+                      }
+                    },
+                    email: {
+                      presence: {
+                        allowEmpty: false
+                      },
+                      email: true
+                    },
+                    objet: {
+                      presence: {
+                        allowEmpty: true
+                      }
+                    },
+                    message: {
+                      presence: {
+                        allowEmpty: false
+                      }
+                    }
+                  };
+
+                  const form = document.getElementById('contact-form');
+
+                  form.addEventListener('submit', function(event) {
+                    const formValues = {
+                      nom: form.elements.nom.value,
+                      objet: form.elements.objet.value,
+                      email: form.elements.email.value,
+                      message: form.elements.message.value
+                    };
+
+                    const errors = validate(formValues, constraints);
+
+                    if (errors) {
+                      event.preventDefault();
+                      const errorMessage = Object
+                        .values(errors)
+                        .map(function(fieldValues) {
+                          return fieldValues.join(', ')
+                        })
+                        .join("\n");
+
+                      alert(errorMessage);
+                    }
+                  }, false);
+                </script>
+              </div>
+            </div>
+
+          </div>
+            
+          </section>
+      </div>
+       
+      </div>
+      <div class="backhome d-flex  flex-row-reverse">
+        <div class="btn shadow radius-2 ">
+          <a href="#main-header"><i class="fas fa-arrow-up fa-icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>Copyright - </span>
+      <a href="https.aranea-web.fr" target="blank" class="ml-1">Estelle Rose</a>
+    </footer>
+  </body>
+</html>
