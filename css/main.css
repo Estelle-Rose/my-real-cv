@@ -517,6 +517,14 @@ h2 {
   }
 }
 
+.btn-primary {
+  background-color: #066666 !important;
+}
+
+.dropdown-btn {
+  color: #ffffff !important;
+}
+
 #main-container {
   padding: 3em 2em 5em 2em;
 }
@@ -567,6 +575,18 @@ h2 {
   max-height: 650px;
 }
 
+.navbar-dark {
+  background-color: #2c2d30 !important;
+}
+
+#mytoggler {
+  border-color: #066666 !important;
+  color: #066666 !important;
+}
+#mytoggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,102,102, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .nav {
   display: grid;
   grid-template-columns: 1fr;
@@ -574,18 +594,12 @@ h2 {
   align-items: center;
 }
 
-.nav-li {
+.nav-item, .nav-li {
   display: grid;
   grid-template-columns: 3fr;
   justify-content: space-between;
   align-content: center;
   margin: 5px 15px;
-  border-radius: 12px;
-  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
 }
 
 .nav-li a {
@@ -748,6 +762,18 @@ h2 {
   padding: 1em;
   margin: 1em;
   background-color: #2c2d30 !important;
+}
+
+.portfolio-btn {
+  background-color: #066666;
+  border-color: #2c2d30 !important;
+}
+.portfolio-btn:hover {
+  color: white;
+}
+
+.bloc-portfolio h2 {
+  font-size: 1.7em;
 }
 
 .contact-card {

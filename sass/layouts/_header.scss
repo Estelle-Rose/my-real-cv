@@ -2,26 +2,32 @@
   background:$primary;
   max-height: 650px;
 }
+.navbar-dark {
+  background-color: $primary!important;
+}
+ #mytoggler {
+  border-color: $accent!important;
+  color: $accent!important;
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,102,102, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    
+  }
+}
 .nav {
   display: grid;
-   grid-template-columns: 1fr;
-   
+   grid-template-columns: 1fr;   
   justify-content: center;
   align-items: center;
+  
 }
 
-.nav-li {
+.nav-item ,.nav-li {
   display: grid;
   grid-template-columns: 3fr;
   justify-content: space-between;  
   align-content: center;
   margin: 5px 15px;
-  border-radius: 12px;
-  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+  
 }
 .nav-li a {  
   width: 100%;

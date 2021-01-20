@@ -3,3 +3,14 @@
     margin: 1em;
     background-color: $primary!important;
 }
+.portfolio-btn {
+    background-color: $accent;
+    border-color: $primary!important;
+    &:hover {
+        color: white;
+    }
+}
+.bloc-portfolio h2 {
+    font-size: 1.7em;
+
+}
