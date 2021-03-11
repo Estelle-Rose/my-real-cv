@@ -1,7 +1,4 @@
 <?php
-
-
-
 // Define some constants
 
 
