@@ -8,9 +8,14 @@
     border-color: $primary!important;
     &:hover {
         color: white;
+        border-color: $accent-2!important;
     }
 }
-.bloc-portfolio h2 {
+.bloc-portfolio {
+     h2 {
     font-size: 1.7em;
-
+    }
+    h5 {
+        color: $accent-2;
+    }
 }

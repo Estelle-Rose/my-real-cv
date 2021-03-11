@@ -19,3 +19,23 @@ background-color: $accent!important;
 .dropdown-btn {
     color: $secondary!important;
 }
+
+.download-btn {
+    position: absolute;
+    right: 1em;
+    border-color: $accent-2;
+    padding: 0.1em 0.5em;
+    &:hover {
+        border-color: $secondary;
+    }
+    a {
+        font-size: 0.9em;
+    }
+}
+.download-btn.accroche-btn {
+    bottom: 1em;
+    
+    a {
+        font-size: 0.8em;
+    }
+}

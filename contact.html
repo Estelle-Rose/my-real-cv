@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <title>Contactez-moi</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Récemment diplomée développeuse web avec Openclassrooms, je recherche aujourd'hui une alternance php / symfony pour aller encore plus loin, vers l'infini et au-delà !">
+
+  <!-- Open Graph / Facebook -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://estelle-rose.fr/">
+  <meta property="og:title" content="Mon cv de Dev - Vers l'infini et au-delà">
+  <meta property="og:description" content="Récemment diplomée développeuse web avec Openclassrooms, je recherche aujourd'hui une alternance php / symfony pour aller encore plus loin, vers l'infini et au-delà !">
+
+  <meta property="og:image" content="assets/images/favicon_cv.png">
+
+    
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+  
+    <title>Pigeon vo</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,800&display=swap"
@@ -23,11 +53,14 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
   </head>
  <body>
+   <!--deco-->
     <div class="third-container"></div>
     <div class="second-container"></div>
+    <!--end deco-->
 
-    <div class="container mx-auto" id="main-container">
+    <main class="container mx-auto" id="main-container">
       <div class="row  home-content">
+        <!--navigation-->
          <header id="main-header" class="col-lg-3 my-md-2 shadow d-flex flex-column">
             <div class="row">
               <div class="col-12 p-3">
@@ -104,6 +137,7 @@
                         <img
                           src="assets/images/pigeon_vert.svg"
                           class="pigeon"
+                          alt="icone pigeon"
                         /></div
                     ></a>
                   </li>
@@ -160,6 +194,7 @@
                         <img
                           src="assets/images/pigeon_vert.svg"
                           class="pigeon"
+                          alt="icone pigeon"
                         /></div
                     ></a>
                   </li>
@@ -167,7 +202,9 @@
               </nav>
              </div>
           </header>
-
+          <!--end navigation-->
+          <!--back to top btn-->
+          <!--content-->
         <section class="col-lg-8 my-5 py-lg-4 my-md-2 ml-lg-3 bloc-home bloc-contact shadow">
          
           <div class="col-12 main-title d-flex flex-column justify-content-center align-content-center text-center mx-auto py-5">
@@ -211,109 +248,68 @@
             <div class="card contact-card radius shadow py-3">
               <div class="card-body">
                 <div class="d-flex justify-content-center pigeon-box ml-n4 pb-3">
-                  <img src="assets/images/pigeon_vert.svg" class="pigeon_contact" alt="..." width="96px">
-                  <h3 class="card-title  font-weight-bold display-5 mt-4">Pigeon voyageur</h3>
+                  <img src="assets/images/pigeon_vert.svg" class="pigeon_contact mt-n2" alt="icone pigeon avec enveloppe" width="96px" height="96px">
+                  <h3 class="card-title mt-4">Pigeon voyageur</h3>
+                  
                 </div>
 
-                <form action="sendemail.php" method="POST" id="contact-form">
-                  <div class="form-group">
-                    <label for="nom">Votre nom</label>
-                    <input type="text" class="form-control" id="nom" name="nom" required>
+                <form action="sendemail.php" method="POST" id="contact-form" role="form">
+                  
+                  <div class="controls">
+                    <div class="form-group">
+                      <label for="nom">Votre nom</label>
+                      <input type="text" class="form-control" id="nom" name="nom" required data-error="Merci de renseigner votre nom">
+                      <div class="help-block with-errors"></div>
+  
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Votre email</label>
+                      <input type="email" class="form-control" id="email" name="email" required data-error="Merci de vérifier votre email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="objet">Objet</label>
+                      <input type="text" class="form-control" id="objet" name="objet" data-error="Merci de renseigner un objet">
+                      <div class="help-block with-errors"></div>
+  
+  
+                    </div>
+  
+                    <div class="form-group">
+                      <label for="message">Votre message</label>
+                      <textarea class="form-control" id="message" name="message" rows="3" required data-error="Merci d'écrire un message"></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <button type="submit" class="btn btn-dark d-flex justify-content-center align-items-center mx-auto" value="Send message">Envoyer</button>
 
                   </div>
-                  <div class="form-group">
-                    <label for="email">Votre email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="objet">Objet</label>
-                    <input type="text" class="form-control" id="objet" name="objet">
-
-
-                  </div>
-
-                  <div class="form-group">
-                    <label for="message">Votre message</label>
-                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-dark d-flex justify-content-center align-items-center mx-auto">Envoyer</button>
+                  <div class="messages"></div>
                 </form>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-                <script>
-                  const constraints = {
-                    nom: {
-                      presence: {
-                        allowEmpty: false
-                      }
-                    },
-                    email: {
-                      presence: {
-                        allowEmpty: false
-                      },
-                      email: true
-                    },
-                    objet: {
-                      presence: {
-                        allowEmpty: true
-                      }
-                    },
-                    message: {
-                      presence: {
-                        allowEmpty: false
-                      }
-                    }
-                  };
-
-                  const form = document.getElementById('contact-form');
-
-                  form.addEventListener('submit', function(event) {
-                    const formValues = {
-                      nom: form.elements.nom.value,
-                      objet: form.elements.objet.value,
-                      email: form.elements.email.value,
-                      message: form.elements.message.value
-                    };
-
-                    const errors = validate(formValues, constraints);
-
-                    if (errors) {
-                      event.preventDefault();
-                      const errorMessage = Object
-                        .values(errors)
-                        .map(function(fieldValues) {
-                          return fieldValues.join(', ')
-                        })
-                        .join("\n");
-
-                      alert(errorMessage);
-                    }
-                  }, false);
-                </script>
+             
+               
               </div>
             </div>
 
           </div>
             
           </section>
+          <!--end content-->
       </div>
        
-      </div>
+      <!--back to top btn-->
       <div class="backhome d-flex  flex-row-reverse">
         <div class="btn shadow radius-2 ">
           <a href="#main-header"><i class="fas fa-arrow-up fa-icon"></i></a>
         </div>
       </div>
-    </div>
+      <!--end back to top btn-->
+    </main>
 
     <footer class="footer">
-      <span>Copyright - </span>
-      <a href="https.aranea-web.fr" target="blank" class="ml-1">Estelle Rose</a>
+      <span>Copyright - 2021</span>
+      <span class="ml-2 ">Estelle Rose</span>
     </footer>
-     <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -324,5 +320,7 @@
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+   <script src="contact.js"></script>
   </body>
 </html>

@@ -1,3 +1,21 @@
 .contact-card {
 background-color: $primary;
 }
+.bloc-contact {
+    h2 {
+        color: $accent-2;
+    }
+    .fa-icon {
+    font-size: 20px;
+}
+}
+.alert-success {
+    background-color: $accent-2!important;    
+}
+.alert-danger {
+    background-color: #990000!important;
+    
+}
+.alert-text {
+    color: $primary!important;
+}

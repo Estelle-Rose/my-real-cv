@@ -4,7 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Récemment diplomée développeuse web avec Openclassrooms, je recherche aujourd'hui une alternance php / symfony pour aller encore plus loin, vers l'infini et au-delà !"
+    />
+
+    <!-- Open Graph / Facebook -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://estelle-rose.fr/" />
+    <meta
+      property="og:title"
+      content="Mon cv de Dev - Vers l'infini et au-delà"
+    />
+    <meta
+      property="og:description"
+      content="Récemment diplomée développeuse web avec Openclassrooms, je recherche aujourd'hui une alternance php / symfony pour aller encore plus loin, vers l'infini et au-delà !"
+    />
+
+    <meta property="og:image" content="assets/images/favicon_cv.png" />
+
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
     <title>Estelle Rose - Développeuse Web</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -24,40 +85,53 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
   </head>
   <body>
+    <!--deco-->
     <div class="third-container"></div>
     <div class="second-container"></div>
+    <!--end deco-->
+    <main class="container mx-auto" id="main-container">
+      <div class="row home-content">
+        <!--navigation-->
+        <header
+          id="main-header"
+          class="col-lg-3 my-md-2 shadow d-flex flex-column"
+        >
+          <div class="row">
+            <div class="col-12 p-3">
+              <div class="profile-pic d-flex">
+                <img
+                  src="assets/images/profil.jpg"
+                  alt="photo de profil"
+                  id="profil-pic"
+                />
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center mt-2"
+              >
+                <h1 class="mx-auto">Estelle Rose</h1>
 
-    <div class="container mx-auto" id="main-container">
-      <div class="row  home-content">
-          <header id="main-header" class="col-lg-3 my-md-2 shadow d-flex flex-column">
-            <div class="row">
-              <div class="col-12 p-3">
-                <div class="profile-pic d-flex">
-                  <img
-                    src="assets/images/profil.jpg"
-                    alt="photo de profil"
-                    id="profil-pic"
-                  />
-                </div>
-                <div
-                  class="d-flex flex-column justify-content-center align-items-center mt-2"
-                >
-                  <h1 class="mx-auto">Estelle Rose</h1>
-                  
-                    <p class="mb-3"><span class="devel">Dével</span>oppeuse web </p>
-                    
-                  
-                </div>
+                <p class="mb-3"><span class="devel">Dével</span>oppeuse web</p>
               </div>
             </div>
-            <div class="row">
-              <nav class="col-12 d-lg-none navbar navbar-dark d-flex justify-content-end radius ">               
-                  
-                  <button class="navbar-toggler  mb-3" id="mytoggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                  <ul class="navbar-nav">
+          </div>
+          <div class="row">
+            <nav
+              class="col-12 d-lg-none navbar navbar-dark d-flex justify-content-end radius"
+            >
+              <button
+                class="navbar-toggler mb-3"
+                id="mytoggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mynavbar"
+                aria-controls="mynavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav">
                   <li class="mb-3 nav-item nav-li inset-shadow radius px-3">
                     <a href="index.html" class="d-block mx-auto">
                       <div
@@ -105,79 +179,81 @@
                         <img
                           src="assets/images/pigeon_vert.svg"
                           class="pigeon"
+                          alt="icone pigeon"
                         /></div
                     ></a>
                   </li>
                 </ul>
-                </div>
-             
-              </nav>
-              <nav class="col-12 nav d-none d-lg-block">
-                <ul>
-                  <li class="mb-3 nav-li radius inset-shadow">
-                    <a href="index.html" class="d-block mx-auto">
-                      <div
-                        class="nav-link d-flex justify-space-between align-items-center"
-                      >
-                        <div class="nav-link-body text-left">
-                          <p>Accueil</p>
-                        </div>
+              </div>
+            </nav>
+            <nav class="col-12 nav d-none d-lg-block">
+              <ul>
+                <li class="mb-3 nav-li radius inset-shadow">
+                  <a href="index.html" class="d-block mx-auto">
+                    <div
+                      class="nav-link d-flex justify-space-between align-items-center"
+                    >
+                      <div class="nav-link-body text-left">
+                        <p>Accueil</p>
+                      </div>
 
-                        <i class="fas fa-home fa-icon"></i></div
-                    ></a>
-                  </li>
-                  <li class="mb-3 nav-li radius inset-shadow">
-                    <a href="cv.html" class="d-block mx-auto">
-                      <div
-                        class="nav-link d-flex justify-space-between align-items-center"
-                      >
-                        <div class="nav-link-body text-left">
-                          <p>Mon cv</p>
-                        </div>
+                      <i class="fas fa-home fa-icon"></i></div
+                  ></a>
+                </li>
+                <li class="mb-3 nav-li radius inset-shadow">
+                  <a href="cv.html" class="d-block mx-auto">
+                    <div
+                      class="nav-link d-flex justify-space-between align-items-center"
+                    >
+                      <div class="nav-link-body text-left">
+                        <p>Mon cv</p>
+                      </div>
 
-                        <i class="fas fa-user fa-icon"></i></div
-                    ></a>
-                  </li>
-                  <li class="mb-3 nav-li radius inset-shadow">
-                    <a href="portfolio.html" class="d-block mx-auto">
-                      <div
-                        class="nav-link d-flex justify-space-between align-items-center"
-                      >
-                        <div class="nav-link-body text-left">
-                          <p>Portfolio</p>
-                        </div>
+                      <i class="fas fa-user fa-icon"></i></div
+                  ></a>
+                </li>
+                <li class="mb-3 nav-li radius inset-shadow">
+                  <a href="portfolio.html" class="d-block mx-auto">
+                    <div
+                      class="nav-link d-flex justify-space-between align-items-center"
+                    >
+                      <div class="nav-link-body text-left">
+                        <p>Portfolio</p>
+                      </div>
 
-                        <i class="fas fa-camera-retro fa-icon"></i></div
-                    ></a>
-                  </li>
-                  <li class="mb-3 nav-li radius inset-shadow">
-                    <a href="contact.html" class="d-block m-n1">
-                      <div
-                        class="nav-link d-flex justify-space-between align-items-center"
-                      >
-                        <div class="nav-link-body text-left">
-                          <p>Contact</p>
-                        </div>
-                        <img
-                          src="assets/images/pigeon_vert.svg"
-                          class="pigeon"
-                        /></div
-                    ></a>
-                  </li>
-                </ul>
-              </nav>
-             </div>
-          </header>
-
-        <section class="col-lg-8 my-5  my-md-2 ml-lg-3 bloc-home shadow">
+                      <i class="fas fa-camera-retro fa-icon"></i></div
+                  ></a>
+                </li>
+                <li class="mb-3 nav-li radius inset-shadow">
+                  <a href="contact.html" class="d-block m-n1">
+                    <div
+                      class="nav-link d-flex justify-space-between align-items-center"
+                    >
+                      <div class="nav-link-body text-left">
+                        <p>Contact</p>
+                      </div>
+                      <img
+                        src="assets/images/pigeon_vert.svg"
+                        class="pigeon"
+                        alt="icone pigeon"
+                      /></div
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <!--end avigation-->
+        <!--content-->
+        <section class="col-lg-8 my-5 my-md-2 ml-lg-3 bloc-home shadow">
           <div class="row pt-5 pb-1">
             <div class="col home-title m-auto">
-              <h2 class="home-title_heading text-center">Estelle Rose</h2>
+              <h2 class="home-title_heading text-center">Qui suis-je ?</h2>
             </div>
           </div>
-          <div class="row ">
+          <div class="row">
             <div class="col home-title m-auto css-typing">
-              <h3 class=" pt-2 ">
+              <h3 class="pt-2">
                 Développeuse web à l'écoute d'opportunités...
               </h3>
             </div>
@@ -188,48 +264,73 @@
                 <li class="square-li inset-shadow radius mr-3">
                   <a
                     href="mailto:contact.aranea@gmail.com"
-                    class="home-body_links "
-                    ><i class="fas fa-envelope fa-icon pt-1"></i></i
+                    class="home-body_links"
+                    ><i class="fas fa-envelope fa-icon pt-1"></i
                   ></a>
                 </li>
-                <li class="home-body-li inset-shadow radius-2 ">
+                <li class="home-body-li inset-shadow radius-2">
                   <a
                     href="https://github.com/Estelle-Rose"
-                    class="home-body_links "
-                    ><i class="fab fa-github fa-icon  "></i
+                    class="home-body_links"
+                    ><i class="fab fa-github fa-icon"></i
                   ></a>
                 </li>
-                <li class="square-li inset-shadow  radius">
-                  <a href="https://www.linkedin.com/in/estellejlrose/"><i class="fab fa-linkedin-in fa-icon pt-1 "></i></a>
+                <li class="square-li inset-shadow radius">
+                  <a href="https://www.linkedin.com/in/estellejlrose/"
+                    ><i class="fab fa-linkedin-in fa-icon pt-1"></i
+                  ></a>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="row mx-auto mx-md-2 pt-2 pb-3 mt-md-5">
+            <div class="col-12 radius pt-3 inset-shadow">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Si vous n'êtes pas prêt à risquer l'insolite, vous devrez vous
+                  contenter de l'ordinaire.
+                </p>
+                <footer class="blockquote-footer">
+                  <cite title="Source Title">Jim Rohn</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
           <div class="row mx-auto mx-md-2 pt-5 pb-3 mt-md-5">
-            <div class="col-md-9 col-12 offset-md-3 radius  inset-shadow">
-              <p class="p-3 ">
+            <div
+              class="col-md-9 col-12 offset-md-3 radius accroche inset-shadow"
+            >
+              <p class="p-md-3 pb-5 pt-3 px-2">
                 Passionnée par le web mais aussi par de multiples domaines tels
                 que l’écologie, le commerce et les médecines alternatives, je
                 suis de nature enthousiaste et autonome. Mes différentes
-                expériences professionnelles m’ont transformé en véritable
+                expériences professionnelles m’ont transformée en véritable
                 couteau suisse et m’ont permis d’acquérir les compétences clés
-                pour devenir développeuse web, ou autrement dit, une éternelle
+                pour devenir développeuse web, autrement dit, une éternelle
                 apprenante !
               </p>
+              <button class="btn btn-primary download-btn accroche-btn">
+                <a href="assets/docs/CV_Estelle_Rose_Dev.pdf" download
+                  >Télécharger mon cv</a
+                >
+              </button>
             </div>
           </div>
         </section>
+        <!--end content-->
       </div>
-      <div class="backhome d-flex  flex-row-reverse">
-        <div class="btn shadow radius-2 ">
+      <!--back to top btn-->
+      <div class="backhome d-flex flex-row-reverse">
+        <div class="btn shadow radius-2">
           <a href="#main-header"><i class="fas fa-arrow-up fa-icon"></i></a>
         </div>
       </div>
-    </div>
+      <!-- end back to top btn-->
+    </main>
 
     <footer class="footer">
-      <span>Copyright - </span>
-      <a href="https.aranea-web.fr" target="blank" class="ml-1">Estelle Rose</a>
+      <span>Copyright - 2021</span>
+      <span class="ml-2 ">Estelle Rose</span>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

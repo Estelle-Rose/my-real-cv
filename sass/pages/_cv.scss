@@ -23,7 +23,7 @@
 }
 .home-body {
 .__heading span{
-border-bottom: 3px dashed $accent;
+border-bottom: 3px dashed $accent-2;
 }
 }
 .terminal {    
@@ -36,9 +36,17 @@ border-bottom: 3px dashed $accent;
     }  
     h3 {
         font-size: 1.2em;
+        
     }
     
+    
 }
+.bloc-competences {
+    position: relative;
+    
+}
+
+
 .logo_oc {
     width: 20px;
     height: 20px;

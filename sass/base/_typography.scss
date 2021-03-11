@@ -11,7 +11,8 @@ p, a {
     color: $secondary;
     
 }
-p {
+p{
+  
   font-weight: 200;
 }
 a:hover {
@@ -19,6 +20,9 @@ a:hover {
 }
 h2 {
   font-size: 2.3em;
+}
+ .blockquote p {
+  font-size: 15px !important;
 }
 .shadow {
   box-shadow:  3px 3px 3px #202125, -3px -3px 3px #353535;
@@ -66,16 +70,16 @@ h2 {
 
 /* anim developpeusee*/
 .css-typing h3 {
-  border-right: .15em solid #006666;
-  
+  font-size: 1.3em;
+  border-right: .15em solid $accent-2;
   white-space: nowrap;
   overflow: hidden;
   width: 9.7em;
-  animation: type 4s steps(40, end);
-  -webkit-animation: type 4s steps(40, end);
+  animation: type 4s steps(40, end) ;
+  -webkit-animation: type 4s steps(40, end) ;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-  @include respond-to(medium){
+    @include respond-to(medium){
          width: 22.5em;
     }
 }
@@ -84,7 +88,7 @@ h2 {
     width: 0;
   }
   99.9% {
-    border-right: .15em solid #006666;
+    border-right: .15em solid $accent-2;
   }
   100% {
     border: none;
