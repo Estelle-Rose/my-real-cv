@@ -8,15 +8,21 @@ body {
     position: relative;
 }
 p, a {
-    color: $secondary;
-    
+    color: $secondary;    
 }
-p{
-  
+p{  
   font-weight: 200;
 }
 a:hover {
   text-decoration: none !important;
+  color: $accent-2 !important;
+}
+ .nav-link-body > p:hover{
+  
+  color: $accent-2 !important;
+}
+ .nav-link-body > .active {
+  color: $accent-2 !important;
 }
 h2 {
   font-size: 2.3em;
